@@ -42,7 +42,7 @@ boton.addEventListener("click", () => {
 
             <h1>🌹 Te Amo 🌹</h1>
 
-                <img src="img/foto2.jpg.jpeg" alt="Nuestra foto 2">
+                <img src="foto2.jpg.jpeg" alt="Nuestra foto 2">
 
             <p style="font-size: 22px; color: 
             black;">
