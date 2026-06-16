@@ -1,0 +1,269 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+}
+.contenedor{
+    width: min(90%, 700px);
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+    animation: aparecer 1s ease;
+}
+
+h1{
+    color:#ff4d6d;
+
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo{
+    from{
+        text-shadow: 0 0 10px #ff4d6d;
+    }
+
+    to{
+        text-shadow:
+            0 0 20px #ff4d6d,
+            0 0 30px #ff758f,
+            0 0 40px #ff758f;
+    }
+}
+
+p{
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+    max-width: 280px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border-radius: 20px;
+
+    border: 4px solid #928587;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    transition: transform 0.4s;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+button{
+    background:linear-gradient(45deg, #ff4d6d, #ff9a9e);
+    color: white;
+
+    border: none;
+    padding: 15px 30px;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    border-radius: 30px;
+
+    transition: background 0.4s;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,77,109,0.4);
+}
+
+.mensaje{
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.corazon{
+    position: fixed;
+    font-size: 25px;
+    animation: subir 6s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes subir{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+#contador{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4d6d;
+    margin-top: 20px;
+}
+
+.contenedor{
+    animation: aparecer 1s ease;
+
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform:  translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fondo-corazones{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.carta{
+    background: #fffafc;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.8;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: cartaSube 1s ease;
+}
+
+@keyframes cartaSube{
+    from{
+        opacity:0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.frase-final{
+    background: linear-gradient(135deg,#fff0f5,#ffe4e9);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-top: 25px;
+
+    box-shadow: 0 10px 25px rgba(255,77,109,0.2);
+
+    animation: aparecer 1.5s ease;
+}
+
+.frase-final h2{
+    color: #ff4d6d;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    margin-bottom: 20px;
+}
+.frase-final{
+    background: rgb(246, 238, 238);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-top: 25px;
+
+    border: 3px solid #ff8fa3;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+@keyframes latido{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.08);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+#contador{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+@keyframes brilloTexto{
+    0%{
+        opacity: 0.7;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.7;
+    }
+}
+.recuerdo{
+    color: #444;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+button{
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 15px 30px;
+
+    font-size: clamp(1rem, 2vw, 1.1rem);
+
+    border-radius: 30px;
+}
+body{
+    padding: 20px;
+    box-sizing: border-box;
+}
