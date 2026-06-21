@@ -35,7 +35,7 @@ function iniciarExperiencia() {
                 // PANTALLA 3: El final con el Contador y el Botón de Regreso
                 document.querySelector(".contenedor").innerHTML = `
                     <h1>🌹 Te Amo 🌹</h1>
-                    <img src="img/foto2.jpg.jpeg" alt="Nuestra foto 2">
+                    <img src="foto2.jpg.jpeg" alt="Nuestra foto 2">
                     <p style="font-size: 18px; color: #4a3f4b; font-weight: 600; margin-bottom: 10px;">
                         😍 Gracias por estar siempre para mí 💘
                     </p>
