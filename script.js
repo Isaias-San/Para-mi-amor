@@ -1,7 +1,7 @@
 // 1. Guardamos la estructura exacta de la primera pantalla en una variable
 const vistaInicialHtml = `
     <h1>Para ti mi amor ❤️</h1>
-    <img src="img/foto1.jpg.jpeg" alt="Nuestra foto">
+    <img src="foto1.jpg.jpeg" alt="Nuestra foto">
     <p style="margin-bottom: 10px;">Tengo algo especial para ti...</p>
     <button id="btnSorpresa">¡Haz clic para ver la sorpresa! ✨</button>
 `;
@@ -79,8 +79,6 @@ function iniciarExperiencia() {
 // 3. Lanzamos el código por primera vez cuando carga la página web
 iniciarExperiencia();
 
-
-// --- Código de la lluvia de corazones (Se mantiene intacto al fondo) ---
 setInterval(() => {
     const corazon = document.createElement("div");
     corazon.innerHTML = "❤️";
